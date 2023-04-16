@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "Casino.h"
+#include "TicTacToe.h"
 
 
 namespace CSC2034 {
@@ -8,8 +9,8 @@ namespace CSC2034 {
 	void Casino::play(string gameName) {
 		Casino* game = NULL;   //pointer can refer to object of subclass
 
-		if (gameName == "TicTacToeGame")
-			game = NULL; // TicTacToeGame::makeGame();
+		if (gameName == "TicTacToe")
+			game = TicTacToeGame::makeGame(); // TicTacToeGame::makeGame();
 
 		else
 			throw NoGame(gameName + " game not found!!");
