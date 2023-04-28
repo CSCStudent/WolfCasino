@@ -2,10 +2,10 @@
 #include <string>
 using namespace std;
 
-// CSC2034 ++ class project
+// CSC2034 C++ class project
 //Header file for class Casino
-// Header file for class Casino
 
+//defined namespace for project
 namespace CSC2034 {
 	class Casino {
 	public:
