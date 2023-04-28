@@ -2,6 +2,7 @@
 #include <ctime>
 #include "Casino.h"
 
+//defining namespace for project
 namespace CSC2034
 {
     class TicTacToeGame : public Casino
