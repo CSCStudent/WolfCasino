@@ -32,7 +32,7 @@ namespace CSC2034 {
             setFile(fIn);
         }
         setRolls();
-        srand(time(NULL)); //initialze srand with time
+        srand(time(NULL)); //initialze srand with time 
     }
     Roulette::~Roulette() {}
 
