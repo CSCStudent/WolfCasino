@@ -2,6 +2,7 @@
 #include <ctime>
 #include "TicTacToe.h"
 
+//defined namespace for project
 namespace CSC2034
 {
     //Constructor
