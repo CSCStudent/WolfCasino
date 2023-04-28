@@ -7,6 +7,7 @@
 #include "Casino.h"
 using namespace std;
 
+//defined namespace for project
 using namespace CSC2034;
 int main(int argc, char* argv[]) {
 
