@@ -8,11 +8,12 @@
 using namespace std;
 
 /*
-The Wolf Casino app is designed using a game driver harness structure.  The class Casino defines a member function
-play() that launches the game.  
-Each game class must inherit from class Casino and provide a static 
-member function makeGame() that returns a pointer to a its game object.  The instance member function start() is then used 
-to launch the game.
+*CSC2034 Capstone Project
+*The Wolf Casino app is designed using a game driver harness structure.  The class Casino defines a member function
+*play() that launches the game.  
+*Each game class must inherit from class Casino and provide a static 
+*member function makeGame() that returns a pointer to a its game object.  The instance member function start() is then used 
+*to launch the game.
 */
 
 //defined namespace for project
