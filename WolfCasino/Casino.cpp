@@ -2,6 +2,7 @@
 #include <string>
 #include "Casino.h"
 #include "TicTacToe.h"
+#include "othello.h"
 
 
 namespace CSC2034 {
@@ -11,6 +12,9 @@ namespace CSC2034 {
 
 		if (gameName == "TicTacToe")
 			game = TicTacToeGame::makeGame(); // TicTacToeGame::makeGame();
+
+		else if (gameName == "Othello")
+			game = othello::makeGame();
 
 		else
 			throw NoGame(gameName + " game not found!!");
