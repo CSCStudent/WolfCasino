@@ -8,12 +8,12 @@
 namespace CSC2034 {
 	//class Casino implementation file
 	void Casino::play(string gameName) {
-		Casino* game = NULL;   //pointer can refer to object of subclass
+		Casino* game = NULL;   //pointer should refer to object of subclass
 
 		if (gameName == "TicTacToe")
 			game = TicTacToeGame::makeGame(); // TicTacToeGame::makeGame();
 
-		else if (gameName == "Othello")
+		else if (gameName == "Othello")  
 			game = othello::makeGame();
 
 		else
