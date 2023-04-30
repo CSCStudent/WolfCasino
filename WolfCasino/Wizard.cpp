@@ -4,20 +4,6 @@
 using namespace std;
 using namespace CSC2034;
 
-int main()
-{
-    // Create a new game of Wizard
-    Wizard* game = Wizard::makeGame();
-
-    // Start the game
-    game->start();
-
-    // Clean up memory
-    delete game;
-
-    return 0;
-}
-
 // Constructor
 Wizard::Wizard()
 {
