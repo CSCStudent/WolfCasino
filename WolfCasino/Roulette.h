@@ -32,7 +32,7 @@ namespace CSC2034 {
             *   roll: roll the wheel, select random num on the wheel, and subtract bet from wallet, add to wallet if it is a win
             *   Pre-condition: Input must be int on the wheel, wallet must have enough to bet
             *   Post-condition: none
-            **************************************************************************/
+            **************************************************************************/ 
             void roll(int, int);
 
             /**************************************************************************
