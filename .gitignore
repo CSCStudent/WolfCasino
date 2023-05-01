@@ -362,6 +362,11 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
+# CLion ignore
+cmake-build-*/
+CMakeLists.txt
+.idea/
+
 # VS Project files
 *.sln
 *.vcxproj
