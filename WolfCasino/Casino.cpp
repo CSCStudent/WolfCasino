@@ -3,6 +3,7 @@
 #include "Casino.h"
 #include "TicTacToe.h"
 #include "othello.h"
+#include "TicLogic.h"
 
 
 namespace CSC2034 {
@@ -13,11 +14,13 @@ namespace CSC2034 {
 		if (gameName == "TicTacToe")
 			game = TicTacToeGame::makeGame(); // TicTacToeGame::makeGame();
 
-		else if (gameName == "Othello")  
-			game = othello::makeGame();
+		else if (gameName == "Othello")
+            game = othello::makeGame();
 
-		else
-			throw NoGame(gameName + " game not found!!");
+        else if (gameName == "TicTacToeGame")
+            game = TicLogic::makeGame();
+
+		else throw NoGame(gameName + " game not found!!");
 
 		game->start();  // using late binding, invoke game start
 		delete game;	// cleaning up heap
