@@ -20,17 +20,17 @@ using namespace std;
 using namespace CSC2034;
 int main(int argc, char* argv[]) {
 
-	if (argc > 1) {
-		cout << "Welcome to the Wolf Casino.  You have chosen to play: " << argv[1] << std::endl;
+	//if (argc > 1) {
+		cout << "Welcome to the Wolf Casino.  You have chosen to play: " << std::endl;
 		cout << "Getting game ready." << endl;
 		Sleep(3000);
 		try {
-			Casino::play(argv[1]); //static function call
+			Casino::play("TicTacToeGame"); //static function call
 		}
 		catch (NoGame e) {
 			cout << e.getMsg();
 		}
-	}
-	else
-		std::cout << "Usage: WolfCasinoGame game_to_play" << std::endl;
+	//}
+	//else
+	//	std::cout << "Usage: WolfCasinoGame game_to_play" << std::endl;
 }

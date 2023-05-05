@@ -1,6 +1,12 @@
-//
-// Created by owencramer on 5/1/2023.
-//
+/* Owen Cramer
+ * FRCC2034
+ * 7 May 2023
+ * Main program to run the TicTacToe Game
+ * This came offers a way to play with friend and playing against the computer.
+ * How the computer works is by selecting a random location on the board if
+ * there is space available. Basically the game runs on easy mode for the player against the computer.
+ */
+
 
 #include "TicLogic.h"
 #include <thread>
@@ -103,9 +109,9 @@ namespace CSC2034 {
 
     void TicLogic::player_move(char player) {
         int row, col;
-        cout << "Enter row (1-" << boardSize << "):\n";
+        cout << "Player " << player << " Enter row (1-" << boardSize << "): ";
         cin >> row;
-        cout << "Enter column (1-" << boardSize << "):\n";
+        cout << "Player " << player << " Enter column (1-" << boardSize << "): ";
         cin >> col;
         row--;
         col--;
@@ -134,17 +140,19 @@ namespace CSC2034 {
         cout << "Welcome to TicTacToe!\n";
         cout << "How would you like to play?\n"
                 "Play against another player or against the computer?\n"
-                "[1 for player, 2 for computer]:\n";
+                "[1 for player, 2 for computer]: ";
         cin >> choice;
 
         if (choice == 1) {
             initialize_board();
             print_board();
             while (true) {
+                // Player1's turn
+                cout << "Player " << player1 << endl;
                 player_move(player1);
                 print_board();
                 if (check_win(player1)) {
-                    cout << "You win!\n";
+                    cout << "Player " << player1 << " wins!\n";
                     break;
                 }
                 if (check_draw()) {
@@ -152,10 +160,13 @@ namespace CSC2034 {
                     break;
                 }
                 this_thread::sleep_for(chrono::milliseconds(1000));
+
+                //Player2's turn
+                cout << "Player " << player2 << endl;
                 player_move(player2);
                 print_board();
                 if (check_win(player2)) {
-                    cout << "You lose!\n";
+                    cout << "Player " << player2 << " wins!\n";
                     break;
                 }
                 if (check_draw()) {
@@ -163,7 +174,6 @@ namespace CSC2034 {
                     break;
                 }
                 this_thread::sleep_for(chrono::milliseconds(1000));
-                system("CLS");
             }
 
         } else if (choice == 2) {
@@ -184,7 +194,7 @@ namespace CSC2034 {
                 computer_move();
                 print_board();
                 if (check_win(player2)) {
-                    cout << "You lose!\n";
+                    cout << "Computer wins!\n";
                     break;
                 }
                 if (check_draw()) {
