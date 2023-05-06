@@ -3,6 +3,7 @@
 #include "Casino.h"
 #include "TicTacToe.h"
 #include "othello.h"
+#include "TicLogic.h"
 #include "cardGame.h"
 
 
@@ -15,7 +16,10 @@ namespace CSC2034 {
 			game = TicTacToeGame::makeGame(); // TicTacToeGame::makeGame();
 
 		else if (gameName == "Othello")
-			game = othello::makeGame();
+            game = othello::makeGame();
+
+    else if (gameName == "TicTacToeGame")
+            game = TicLogic::makeGame();
 
 		else if (gameName == "CardGame")
 			game = CardGame::makeGame();
