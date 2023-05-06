@@ -5,6 +5,7 @@
 #include "othello.h"
 #include "TicLogic.h"
 #include "cardGame.h"
+#include "Snake02857826.h"
 
 // class Casino implemetation file
 namespace CSC2034 {
@@ -15,13 +16,16 @@ namespace CSC2034 {
 			game = TicTacToeGame::makeGame(); // TicTacToeGame::makeGame();
 
 		else if (gameName == "Othello")
-            game = othello::makeGame();
+			game = othello::makeGame();
 
-    	else if (gameName == "TicTacToeGame")
-            game = TicLogic::makeGame();
+		else if (gameName == "TicTacToeGame")
+			game = TicLogic::makeGame();
 
 		else if (gameName == "CardGame")
 			game = CardGame::makeGame();
+
+		else if (gameName == "Snake02857826")
+			game = Snake02857826::makeGame();
 
 		else
 			throw NoGame(gameName + " game not found!!");
