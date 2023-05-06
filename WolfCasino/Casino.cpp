@@ -6,9 +6,8 @@
 #include "TicLogic.h"
 #include "cardGame.h"
 
-
+// class Casino implemetation file
 namespace CSC2034 {
-	//class Casino implementation file
 	void Casino::play(string gameName) {
 		Casino* game = NULL;   //pointer should refer to object of subclass
 
