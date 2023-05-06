@@ -21,12 +21,14 @@
   <ItemGroup>
     <ClCompile Include="Casino.cpp" />
     <ClCompile Include="othello.cpp" />
+    <ClCompile Include="Roulette.cpp" />
     <ClCompile Include="TicTacToe.cpp" />
     <ClCompile Include="WolfCasinoGame.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Casino.h" />
     <ClInclude Include="othello.h" />
+    <ClInclude Include="Roulette.h" />
     <ClInclude Include="TicTacToe.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
