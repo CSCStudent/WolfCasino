@@ -2,7 +2,7 @@
 #include <string>
 #include "Casino.h"
 #include "TicTacToe.h"
-
+#include "MineSweeper.h"
 
 namespace CSC2034 {
 	//class Casino implementation file
@@ -11,6 +11,12 @@ namespace CSC2034 {
 
 		if (gameName == "TicTacToe")
 			game = TicTacToeGame::makeGame(); // TicTacToeGame::makeGame();
+
+		else
+			throw NoGame(gameName + " game not found!!");
+
+		if (gameName == "MineSweeper")
+			game = MineSweeper::makeGame(); // TicTacToeGame::makeGame();
 
 		else
 			throw NoGame(gameName + " game not found!!");

@@ -19,11 +19,19 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Board.cpp" />
     <ClCompile Include="Casino.cpp" />
+    <ClCompile Include="Level.cpp" />
+    <ClCompile Include="Mine.cpp" />
+    <ClCompile Include="MineSweeper.cpp" />
     <ClCompile Include="WolfCasinoGame.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Board.h" />
     <ClInclude Include="Casino.h" />
+    <ClInclude Include="Level.h" />
+    <ClInclude Include="Mine.h" />
+    <ClInclude Include="MineSweeper.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
