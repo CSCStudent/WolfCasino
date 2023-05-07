@@ -6,6 +6,9 @@
 #include "TicLogic.h"
 #include "cardGame.h"
 #include "Snake02857826.h"
+#include "Roulette.h"
+#include "Wordle.h"
+
 
 // class Casino implemetation file
 namespace CSC2034 {
@@ -14,6 +17,12 @@ namespace CSC2034 {
 
 		if (gameName == "TicTacToe")
 			game = TicTacToeGame::makeGame(); // TicTacToeGame::makeGame();
+
+		else if (gameName == "Roulette")
+			game = Roulette::makeGame();
+
+		else if (gameName == "Wordle")
+			game = wordle::makeGame();
 
 		else if (gameName == "Othello")
 			game = othello::makeGame();
