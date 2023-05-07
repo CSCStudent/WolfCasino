@@ -3,6 +3,7 @@
 #include "Casino.h"
 #include "TicTacToe.h"
 #include "othello.h"
+#include "Blackjack.h"
 
 
 namespace CSC2034 {
@@ -15,6 +16,9 @@ namespace CSC2034 {
 
 		else if (gameName == "Othello")  
 			game = othello::makeGame();
+
+		else if (gameName == "Blackjack")
+			game = Blackjack::makeGame();
 
 		else
 			throw NoGame(gameName + " game not found!!");
