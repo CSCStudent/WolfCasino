@@ -36,6 +36,18 @@
     <ClCompile Include="TicTacToe.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="othello.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TicTacToe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+
+    <ClCompile Include="Blackjack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+
+
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Casino.h">
@@ -54,6 +66,26 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="TicTacToe.h">
+    <ClInclude Include="othello.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TicTacToe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+
+    <ClInclude Include="Blackjack.h">
+
+    <ClInclude Include="Card.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CardGame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Deck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Hand.h">
+
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
