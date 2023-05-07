@@ -8,6 +8,7 @@ Author: Hridaya Bijayananda
 
 #include <iostream>
 #include <vector>
+#include "Casino.h"
 #define MAX_SIZE 25
 #define MAX_MINES 99
 

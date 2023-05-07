@@ -24,6 +24,7 @@
     <ClCompile Include="Level.cpp" />
     <ClCompile Include="Mine.cpp" />
     <ClCompile Include="MineSweeper.cpp" />
+    <ClCompile Include="TicTacToe.cpp" />
     <ClCompile Include="WolfCasinoGame.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -32,6 +33,7 @@
     <ClInclude Include="Level.h" />
     <ClInclude Include="Mine.h" />
     <ClInclude Include="MineSweeper.h" />
+    <ClInclude Include="TicTacToe.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

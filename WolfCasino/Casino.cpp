@@ -12,9 +12,6 @@ namespace CSC2034 {
 		if (gameName == "TicTacToe")
 			game = TicTacToeGame::makeGame(); // TicTacToeGame::makeGame();
 
-		else
-			throw NoGame(gameName + " game not found!!");
-
 		if (gameName == "MineSweeper")
 			game = MineSweeper::makeGame(); // TicTacToeGame::makeGame();
 
