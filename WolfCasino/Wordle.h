@@ -10,7 +10,6 @@
 
 namespace CSC2034 {
     class wordle : public Casino {
-    private:
 
     private:
         size_t wordsize = 0;
