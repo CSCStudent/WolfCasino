@@ -21,6 +21,21 @@
     <ClCompile Include="WolfCasinoGame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MineSweeper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Board.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Level.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TicTacToe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="othello.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -38,6 +53,19 @@
     <ClInclude Include="Casino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Board.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MineSweeper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TicTacToe.h">
     <ClInclude Include="othello.h">
       <Filter>Header Files</Filter>
     </ClInclude>

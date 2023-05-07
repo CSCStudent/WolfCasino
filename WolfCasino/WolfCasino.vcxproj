@@ -19,6 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Board.cpp" />
+    <ClCompile Include="Casino.cpp" />
+    <ClCompile Include="Level.cpp" />
+    <ClCompile Include="Mine.cpp" />
+    <ClCompile Include="MineSweeper.cpp" />
     <ClCompile Include="Blackjack.cpp" />
     <ClCompile Include="Casino.cpp" />
     <ClCompile Include="othello.cpp" />
@@ -27,7 +32,11 @@
     <ClCompile Include="WolfCasinoGame.cpp" />
   </ItemGroup>
   <ItemGroup>
-
+    <ClInclude Include="Board.h" />
+    <ClInclude Include="Casino.h" />
+    <ClInclude Include="Level.h" />
+    <ClInclude Include="Mine.h" />
+    <ClInclude Include="MineSweeper.h" />
     <ClInclude Include="Blackjack.h" />
 
     <ClInclude Include="Card.h" />

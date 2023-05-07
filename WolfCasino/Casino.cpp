@@ -2,6 +2,7 @@
 #include <string>
 #include "Casino.h"
 #include "TicTacToe.h"
+#include "MineSweeper.h"
 #include "othello.h"
 #include "Blackjack.h"
 #include "TicLogic.h"
@@ -18,6 +19,8 @@ namespace CSC2034 {
 		if (gameName == "TicTacToe")
 			game = TicTacToeGame::makeGame(); // TicTacToeGame::makeGame();
 
+		if (gameName == "MineSweeper")
+			game = MineSweeper::makeGame(); // TicTacToeGame::makeGame();
 		else if (gameName == "Roulette")
 			game = Roulette::makeGame();
 
