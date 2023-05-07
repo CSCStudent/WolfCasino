@@ -27,7 +27,7 @@ namespace CSC2034 {
 		else if (gameName == "Othello")
 			game = othello::makeGame();
 
-    else if (gameName == "Blackjack")
+    		else if (gameName == "Blackjack")
 			game = Blackjack::makeGame();
 
 		else if (gameName == "TicTacToeGame")
