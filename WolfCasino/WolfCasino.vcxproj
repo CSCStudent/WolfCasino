@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Blackjack.cpp" />
     <ClCompile Include="Casino.cpp" />
     <ClCompile Include="othello.cpp" />
     <ClCompile Include="Roulette.cpp" />
@@ -26,8 +27,12 @@
     <ClCompile Include="WolfCasinoGame.cpp" />
   </ItemGroup>
   <ItemGroup>
+
+    <ClInclude Include="Blackjack.h" />
+
     <ClInclude Include="Card.h" />
     <ClInclude Include="CardGame.h" />
+
     <ClInclude Include="Casino.h" />
     <ClInclude Include="Deck.h" />
     <ClInclude Include="Hand.h" />

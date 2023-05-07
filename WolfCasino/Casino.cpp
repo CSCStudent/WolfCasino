@@ -3,12 +3,12 @@
 #include "Casino.h"
 #include "TicTacToe.h"
 #include "othello.h"
+#include "Blackjack.h"
 #include "TicLogic.h"
 #include "cardGame.h"
 #include "Snake02857826.h"
 #include "Roulette.h"
 #include "Wordle.h"
-
 
 // class Casino implemetation file
 namespace CSC2034 {
@@ -26,6 +26,9 @@ namespace CSC2034 {
 
 		else if (gameName == "Othello")
 			game = othello::makeGame();
+
+    else if (gameName == "Blackjack")
+			game = Blackjack::makeGame();
 
 		else if (gameName == "TicTacToeGame")
 			game = TicLogic::makeGame();
