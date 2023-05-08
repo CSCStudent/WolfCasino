@@ -22,8 +22,12 @@
     <ClCompile Include="Casino.cpp" />
     <ClCompile Include="othello.cpp" />
     <ClCompile Include="Roulette.cpp" />
+    <ClCompile Include="Segment02857826.cpp" />
+    <ClCompile Include="Snake02857826.cpp" />
+    <ClCompile Include="TicLogic.cpp" />
     <ClCompile Include="TicTacToe.cpp" />
     <ClCompile Include="WolfCasinoGame.cpp" />
+    <ClCompile Include="Wordle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Card.h" />
@@ -33,7 +37,11 @@
     <ClInclude Include="Hand.h" />
     <ClInclude Include="othello.h" />
     <ClInclude Include="Roulette.h" />
+    <ClInclude Include="Segment02857826.h" />
+    <ClInclude Include="Snake02857826.h" />
+    <ClInclude Include="TicLogic.h" />
     <ClInclude Include="TicTacToe.h" />
+    <ClInclude Include="Wordle.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
