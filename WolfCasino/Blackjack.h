@@ -86,9 +86,7 @@ namespace S02440716 {
         Card draw();
         vector<Card> cards;
     };
-
-    namespace CSC2034 {
-
+ 
         class Blackjack : public Casino {
         public:
             Blackjack();
@@ -98,11 +96,10 @@ namespace S02440716 {
             void start();
 
         private:
-            int calculateHandValue(vector<Card> hand);
-            vector<Card> playerHand;
-            vector<Card> dealerHand;
+            int calculateHandValue(vector<S02440716::Card> hand);
+            vector<S02440716::Card> playerHand;
+            vector<S02440716::Card> dealerHand;
         };
 
     }
-}
 #endif // BLACKJACK_H

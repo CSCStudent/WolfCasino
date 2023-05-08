@@ -5,7 +5,7 @@
 #include "Casino.h"
 
 namespace CSC2034 {
-
+	using namespace S02415179;
 	class CardGame :public Casino {
 	public:
 		static CardGame* makeGame();
