@@ -2,10 +2,11 @@
 #include <string>
 #include "Casino.h"
 #include "TicTacToe.h"
+#include "MineSweeper.h"
 #include "othello.h"
+#include "Blackjack.h"
 #include "TicLogic.h"
 #include "cardGame.h"
-#include "Snake02857826.h"
 #include "Roulette.h"
 #include "Wordle.h"
 #include "SnakeGame02857826.h"
@@ -19,6 +20,8 @@ namespace CSC2034 {
 		if (gameName == "TicTacToe")
 			game = TicTacToeGame::makeGame(); // TicTacToeGame::makeGame();
 
+		if (gameName == "MineSweeper")
+			game = MineSweeper::makeGame(); // TicTacToeGame::makeGame();
 		else if (gameName == "Roulette")
 			game = Roulette::makeGame();
 
@@ -35,10 +38,10 @@ namespace CSC2034 {
 			game = TicLogic::makeGame();
 
 		else if (gameName == "CardGame")
-			game = CardGame::makeGame();
+			game = S02415179::CardGame::makeGame();
 
 		else if (gameName == "Snake02857826")
-			game = Snake02857826::makeGame();
+			game = SnakeGame02857826::makeGame();
 
 		else if (gameName == "HangMan")
 			game = HangMan::makeGame();

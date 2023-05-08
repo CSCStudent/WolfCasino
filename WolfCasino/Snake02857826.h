@@ -1,41 +1,29 @@
 #pragma once
-#include "Segment02857826.h"
-#include <windows.h>
-#include <iostream>
 #include <vector>
-#include <conio.h>
-#include <stdlib.h>
-#include <time.h>
-#include "Casino.h"
+#include <iostream>
 
 namespace CSC2034 {
-	class Snake02857826 : public Casino {
+	class Snake02857826 {
 	private:
-		static const int BOARD_HEIGHT = 15;
-		static const int BOARD_WIDTH = 30;
-		const int SPEED_MULT = 10;
-		const int BASE_SPEED = 200;
+		std::vector<std::vector<int>> snake;
+		void cycleSnakeArray();
 		const int START_Y = 7;
 		const int START_X = 15;
-		int score = 0;
-		char snakeBoard[BOARD_HEIGHT][BOARD_WIDTH];
-		std::vector<Segment02857826> snake;
 	public:
-		Snake02857826();
-		~Snake02857826();
-		static Snake02857826* makeGame();
-		void populateBoardArray(char(*snakeBoard)[BOARD_HEIGHT][BOARD_WIDTH]);
-		void printBoard(char(*snakeBoard)[BOARD_HEIGHT][BOARD_WIDTH]);
-		void cycleSnakeArray();
-		void addFood();
+		void right();
+		void left();
+		void up();
+		void down();
 		void addSegment();
-		void start();
-		void play();
-		char direction();
-		int speed();
-		bool right();
-		bool left();
-		bool up();
-		bool down();
+		void addSegment(std::vector<int>);
+		int getSize();
+
+		//Debugging function
+		void printSnake();
+
+		std::vector<int> getFront();
+		std::vector<int> getBack();
 	};
 }
+
+
