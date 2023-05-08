@@ -13,7 +13,7 @@
 
 // class Casino implemetation file
 namespace CSC2034 {
-	using namespace S02440716;
+	using namespace S02440716; // for BlackJack
 	void Casino::play(string gameName) {
 		Casino* game = NULL;   //pointer should refer to object of subclass
 
