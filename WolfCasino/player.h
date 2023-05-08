@@ -47,7 +47,7 @@ namespace CSC2034
 
 	public:
 		Player( );
-
+		Player(int, int);
 		Player( int );
 		// Precondition:  None
 		// Postcondition: A Player with a number has been created
