@@ -175,7 +175,7 @@ namespace CSC2034
         //ugly formatting yay
         system("cls");
         time_t now = time(0);
-        std::cout << ctime(&now) << std::endl;
+       // std::cout << ctime(&now) << std::endl;
 
         std::cout << std::endl;
         std::cout << " |1 2 3|\n";

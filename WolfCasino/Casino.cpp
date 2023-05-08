@@ -2,22 +2,26 @@
 #include <string>
 #include "Casino.h"
 #include "TicTacToe.h"
+#include "MineSweeper.h"
 #include "othello.h"
+#include "Blackjack.h"
 #include "TicLogic.h"
 #include "cardGame.h"
 #include "Snake02857826.h"
 #include "Roulette.h"
 #include "Wordle.h"
 
-
 // class Casino implemetation file
 namespace CSC2034 {
+	using namespace S02440716;
 	void Casino::play(string gameName) {
 		Casino* game = NULL;   //pointer should refer to object of subclass
 
 		if (gameName == "TicTacToe")
 			game = TicTacToeGame::makeGame(); // TicTacToeGame::makeGame();
 
+		if (gameName == "MineSweeper")
+			game = MineSweeper::makeGame(); // TicTacToeGame::makeGame();
 		else if (gameName == "Roulette")
 			game = Roulette::makeGame();
 
@@ -26,6 +30,9 @@ namespace CSC2034 {
 
 		else if (gameName == "Othello")
 			game = othello::makeGame();
+
+    		else if (gameName == "Blackjack")
+			game = Blackjack::makeGame();
 
 		else if (gameName == "TicTacToeGame")
 			game = TicLogic::makeGame();
