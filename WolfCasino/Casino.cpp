@@ -10,6 +10,7 @@
 #include "Snake02857826.h"
 #include "Roulette.h"
 #include "Wordle.h"
+#include "SnakeGame02857826.h"
 
 // class Casino implemetation file
 namespace CSC2034 {
@@ -40,7 +41,7 @@ namespace CSC2034 {
 			game = S02415179::CardGame::makeGame();
 
 		else if (gameName == "Snake02857826")
-			game = Snake02857826::makeGame();
+			game = SnakeGame02857826::makeGame();
 
 		else
 			throw NoGame(gameName + " game not found!!");
