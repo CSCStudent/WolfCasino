@@ -11,6 +11,7 @@
 #include "Wordle.h"
 #include "SnakeGame02857826.h"
 #include "yahtzee.h"
+#include "HangMan.h"
 
 // class Casino implemetation file
 namespace CSC2034 {
@@ -31,7 +32,7 @@ namespace CSC2034 {
 		else if (gameName == "Othello")
 			game = othello::makeGame();
 
-    		else if (gameName == "Blackjack")
+		else if (gameName == "Blackjack")
 			game = S02440716::Blackjack::makeGame();
 
 		else if (gameName == "TicTacToeGame")
@@ -42,8 +43,12 @@ namespace CSC2034 {
 
 		else if (gameName == "Snake02857826")
 			game = SnakeGame02857826::makeGame();
+      
 		else if ( gameName == "Yahtzee" )
 			game = Yahtzee::makeGame( );
+
+		else if (gameName == "HangMan")
+			game = HangMan::makeGame();
 
 		else
 			throw NoGame(gameName + " game not found!!");
