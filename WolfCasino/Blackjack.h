@@ -8,37 +8,39 @@
 #include <string>
 #include "Casino.h"
 
-enum class Suit {
-    CLUBS,
-    DIAMONDS,
-    HEARTS,
-    SPADES
-};
+namespace S02440716 {
+    using namespace CSC2034;
+    enum class Suit {
+        CLUBS,
+        DIAMONDS,
+        HEARTS,
+        SPADES
+    };
 
-enum class Rank {
-    ACE = 1,
-    TWO,
-    THREE,
-    FOUR,
-    FIVE,
-    SIX,
-    SEVEN,
-    EIGHT,
-    NINE,
-    TEN,
-    JACK,
-    QUEEN,
-    KING
-};
+    enum class Rank {
+        ACE = 1,
+        TWO,
+        THREE,
+        FOUR,
+        FIVE,
+        SIX,
+        SEVEN,
+        EIGHT,
+        NINE,
+        TEN,
+        JACK,
+        QUEEN,
+        KING
+    };
 
 
-struct Card {
-    Suit suit;
-    Rank rank;
+    struct Card {
+        Suit suit;
+        Rank rank;
 
-    std::string toString() const {
-        std::string suitStr;
-        switch (suit) {
+        std::string toString() const {
+            std::string suitStr;
+            switch (suit) {
             case Suit::CLUBS:
                 suitStr = "Clubs";
                 break;
@@ -51,10 +53,10 @@ struct Card {
             case Suit::SPADES:
                 suitStr = "Spades";
                 break;
-        }
+            }
 
-        std::string rankStr;
-        switch (rank) {
+            std::string rankStr;
+            switch (rank) {
             case Rank::ACE:
                 rankStr = "Ace";
                 break;
@@ -70,27 +72,27 @@ struct Card {
             default:
                 rankStr = std::to_string(static_cast<int>(rank));
                 break;
+            }
+
+            return rankStr + " of " + suitStr;
         }
-
-        return rankStr + " of " + suitStr;
-    }
-};
+    };
 
 
-class Deck {
+    class Deck {
     public:
         Deck();
         void shuffle();
         Card draw();
         vector<Card> cards;
-};
+    };
 
-namespace CSC2034 {
+    namespace CSC2034 {
 
-    class Blackjack : public Casino {
+        class Blackjack : public Casino {
         public:
             Blackjack();
-            
+
             static Blackjack* makeGame();
 
             void start();
@@ -99,8 +101,8 @@ namespace CSC2034 {
             int calculateHandValue(vector<Card> hand);
             vector<Card> playerHand;
             vector<Card> dealerHand;
-    };
+        };
 
+    }
 }
-
 #endif // BLACKJACK_H
