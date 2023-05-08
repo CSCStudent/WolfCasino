@@ -10,6 +10,7 @@
 #include "Roulette.h"
 #include "Wordle.h"
 #include "SnakeGame02857826.h"
+#include "FishingGame.h"
 #include "yahtzee.h"
 #include "HangMan.h"
 
@@ -43,13 +44,16 @@ namespace CSC2034 {
 
 		else if (gameName == "Snake02857826")
 			game = SnakeGame02857826::makeGame();
+
+    else if (gameName == "FishingGame")
+			game = FishingGame::makeGame();
       
 		else if ( gameName == "Yahtzee" )
 			game = Yahtzee::makeGame( );
 
 		else if (gameName == "HangMan")
 			game = HangMan::makeGame();
-
+      
 		else
 			throw NoGame(gameName + " game not found!!");
 
