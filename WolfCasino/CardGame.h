@@ -4,9 +4,9 @@
 #include "Deck.h"
 #include "Casino.h"
 
-namespace CSC2034 {
-	using namespace S02415179;
-	class CardGame :public Casino {
+namespace S02415179 {
+
+	class CardGame :public CSC2034::Casino {
 	public:
 		static CardGame* makeGame();
 		void start();
@@ -16,9 +16,7 @@ namespace CSC2034 {
 		void resignSequenceTest(Deck);
 		void test();
 	};
-}
- 
-namespace CSC2034 {
+
 	CardGame* CardGame::makeGame() {
 			return new CardGame;
 	}

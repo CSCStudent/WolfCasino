@@ -13,7 +13,6 @@
 
 // class Casino implemetation file
 namespace CSC2034 {
-	using namespace S02440716; // for BlackJack
 	void Casino::play(string gameName) {
 		Casino* game = NULL;   //pointer should refer to object of subclass
 
@@ -32,13 +31,13 @@ namespace CSC2034 {
 			game = othello::makeGame();
 
     		else if (gameName == "Blackjack")
-			game = Blackjack::makeGame();
+			game = S02440716::Blackjack::makeGame();
 
 		else if (gameName == "TicTacToeGame")
 			game = TicLogic::makeGame();
 
 		else if (gameName == "CardGame")
-			game = CardGame::makeGame();
+			game = S02415179::CardGame::makeGame();
 
 		else if (gameName == "Snake02857826")
 			game = Snake02857826::makeGame();
