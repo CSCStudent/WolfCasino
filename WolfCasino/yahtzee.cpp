@@ -33,7 +33,7 @@ namespace CSC2034
 
 	void Yahtzee::play( )
 	{
-		temp( );
+		//temp( );
 		while ( 1 )
 		{
 			int numPlayers;
