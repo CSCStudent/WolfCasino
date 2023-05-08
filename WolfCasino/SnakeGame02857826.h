@@ -1,3 +1,4 @@
+#pragma once
 #include "Snake02857826.h"
 #include <windows.h>
 #include <iostream>
