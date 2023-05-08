@@ -9,7 +9,7 @@
 #include "Casino.h"
 
 namespace FishingGame {
-	class FishingGame : public Casino {
+	class FishingGame : public CSC2034::Casino {
 		enum constants { WIDTH = 8, HEIGHT = 8 };
 	private:
 		Tile ocean[WIDTH][HEIGHT];

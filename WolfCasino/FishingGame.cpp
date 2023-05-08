@@ -3,6 +3,7 @@
 #include <conio.h>
 #include <set>
 #include <vector>
+#include <cstdlib>
 #include <Windows.h>
 #include "FishingGame.h"
 #include "FishingGame/Tile.h"
