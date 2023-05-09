@@ -13,6 +13,7 @@
 #include "FishingGame.h"
 #include "yahtzee.h"
 #include "HangMan.h"
+#include "Checkers.h"
 
 // class Casino implemetation file
 namespace CSC2034 {
@@ -54,6 +55,9 @@ namespace CSC2034 {
 		else if (gameName == "HangMan")
 			game = HangMan::makeGame();
       
+		else if (gameName == "Checkers")
+			game = S02257117::checkers::makeGame();
+
 		else
 			throw NoGame(gameName + " game not found!!");
 
